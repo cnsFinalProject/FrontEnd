@@ -1,0 +1,5 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="280" height="280" viewBox="0 0 280 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Frame">
+<path id="Vector" d="M40 80V48C40 45.8783 40.8429 43.8434 42.3431 42.3431C43.8434 40.8429 45.8783 40 48 40H80M200 40H232C234.122 40 236.157 40.8429 237.657 42.3431C239.157 43.8434 240 45.8783 240 48V80M240 200V232C240 234.122 239.157 236.157 237.657 237.657C236.157 239.157 234.122 240 232 240H200M80 240H48C45.8783 240 43.8434 239.157 42.3431 237.657C40.8429 236.157 40 234.122 40 232V200" stroke-width="5" stroke-linecap="round" stroke="white"/>
+</g>
+</svg>

@@ -1,29 +1,60 @@
-# FinAgent FrontEnd
+# 바로바로 프론트엔드
 
-LG CNS AM Inspire Camp 6기 최종 프로젝트 금융 도메인 팀의 프론트엔드 레포입니다. 담당: FE 진성민, 탁유진. 백엔드와 기획 문서는 [Backend](https://github.com/cnsFinalProject/Backend) 레포에 있습니다.
+React Native·Expo 기반의 개인 간 차용증 시연 앱입니다. `화면시안.zip`의 `PLAY-sync.html`과 개별 화면을 기준으로 실제 입력과 화면 전환을 구성했습니다. 기존 수달 로고와 크림 `#FDF5EC`, 남색 `#101B38`, 카키 `#7D835C`, 버튼 `#4E5738`을 유지합니다.
 
-> 기획은 바뀔 수 있습니다. 최신 기준은 [project-context.md](https://github.com/cnsFinalProject/Backend/blob/develop/docs/project-context.md)입니다.
+## 실행
 
-## 기술 스택 (가안)
-
-| 영역 | 기술 |
-| --- | --- |
-| 화면 | React, Vite (TypeScript 여부 미정) |
-| 라우팅 | React Router |
-| 통신 | axios (API 주소는 `.env`로 관리) |
-
-프로젝트 생성은 2회차 멘토링(11.28) 전에 화면 흐름과 라이브러리를 정한 뒤 진행합니다.
-
-## 협업 규칙
-
-브랜치, 커밋, PR, 리뷰 규칙은 Backend 레포의 [협업규칙.md](https://github.com/cnsFinalProject/Backend/blob/develop/docs/협업규칙.md)를 같이 씁니다. AI 도구 규칙은 [AGENTS.md](AGENTS.md)에 있습니다.
-
-## 로컬에서 AI가 문서까지 읽게 하려면
-
-```bash
-mkdir cnsFinalProject && cd cnsFinalProject
-git clone https://github.com/cnsFinalProject/Backend.git
-git clone https://github.com/cnsFinalProject/FrontEnd.git
+```powershell
+cd "C:/Users/user/Desktop/LastProject/frontend"
+npm.cmd ci
+npm.cmd run web
 ```
 
-이렇게 두 레포를 나란히 두면 FrontEnd에서 실행한 AI가 `../Backend/docs`를 참고할 수 있습니다.
+Android는 `npm.cmd run android`를 사용합니다. 기존 `node_modules`가 설치돼 있으면 `npm.cmd run web`으로 바로 실행할 수 있습니다.
+
+## 시연
+
+처음에는 30만 원 중 1회차 10만 원을 갚은 샘플 약속이 표시됩니다. 박도윤과 이하린 계정은 **한 앱 메모리 안에서 같은 약속을 공유**합니다. 상단 이름으로 계정을 전환합니다. 새로고침하면 초기화됩니다.
+
+- **새 약속:** 홈 → 차용증 쓰기 → 대면 또는 원격 → 두 계정 각각 상대 확인 → 조건 제안·역제안 → 합의 → 각자 안전 질문 → 원문 끝까지 읽기 → 손글씨 모의 서명 → 대여자 모의 송금.
+- **외부 상환:** 이하린 → 따로 보낸 돈 알리기에서 80,000원 입력 → 박도윤 → 입금 내역에서 80,000원 선택 → 회차에 넣기 → 이하린에게 이번 회차 잔액 20,000원 표시 → 앱으로 잔액 상환.
+- **변경:** 약속 상세 → 약속 변경 제안 → 회차 날짜·금액 수정 또는 분할 → 사유 작성 → 상대 수락 → 두 계정 재서명 → v2와 새 상환표 적용. 수락만으로는 원장에 적용되지 않습니다.
+- **거절·감액:** 거절 사유 전달, 역제안, 명시적 감액 확인을 지원합니다. 이미 갚은 회차는 수정할 수 없습니다.
+- **영수증:** 두 계정의 같은 거래·문서번호를 표시합니다. 외부 입금의 잘못된 반영은 대여자가 되돌릴 수 있고 기록은 보존합니다.
+- **시연 설정:** 상환 중·8일 연체·완납 샘플, 본인확인 시작, 원본 화면 목록을 엽니다. 샘플 날짜는 실행일에 맞춰 계산합니다.
+- **원격:** 수신자 이하린 / `010-1234-5531`. 외부 카카오톡·문자를 실제 발송하지 않습니다.
+
+## 검증 명령
+
+```powershell
+npm.cmd test
+npx.cmd tsc --noEmit
+npm.cmd run build:web
+npm.cmd run build:android
+```
+
+도메인 테스트는 두 계정 확인·서명·중복 거래·외부 입금·회차 분할·원문 보존·권한·만료·연체 요청을 검사합니다. 상태와 영수증은 임의의 화면 고정값 대신 현재 약속에서 계산합니다.
+
+## 코드
+
+| 파일·폴더                                                     | 역할                                                  |
+| ------------------------------------------------------------- | ----------------------------------------------------- |
+| `src/BaroApp.jsx`                                             | 새 시연 앱 진입점                                     |
+| `src/features/experience/Experience.jsx`                      | 계정·여러 약속·화면 분기·이벤트 연결                  |
+| `src/features/experience/FlowKit.jsx`, `experience.styles.js` | 공통 컴포넌트·모바일 레이아웃, 기존 브랜드 색상 사용  |
+| `HomeScreen.jsx`, `ConnectionFlow.jsx`, `NegotiationFlow.jsx` | 역할별 홈·연결·제안·비교                              |
+| `SigningFlow.jsx`                                             | 안전 확인·원문 읽기 제한·서명·체결 증명               |
+| `RepaymentFlow.jsx`                                           | 대여·상환·입금 다중 선택·영수증                       |
+| `AmendmentFlow.jsx`, `ExtraScreens.jsx`                       | 회차 분할 변경·캘린더·알림·연체·증거 초안·버전 이력   |
+| `src/domain/workflow.js`                                      | 현재 앱의 이벤트 진입점·권한·버전·외부 입금·변경 검증 |
+| `src/domain/contract.js`, `schedule.js`                       | 기본 협상·서명·원문과 회차 계산                       |
+| `scripts/domain.test.cjs`                                     | 상태 처리 회귀 테스트                                 |
+| `docs/screen-alignment.md`                                    | 시안별 반영 범위와 검증 내역                          |
+
+기존 기능별 정적 Figma 컴포넌트·SVG와 운영자 화면은 보존했습니다. 시연 설정의 화면 목록에서 열고, 운영자 시안은 웹 주소의 `/?preview=admin`으로 확인합니다.
+
+## 연동 전 범위
+
+현재는 **무이자 원금 상환 시연**입니다. 이율 입력·지연손해금 실제 정산·자동이체·푸시 예약은 확정된 서버 규격에 맞춰 연결해야 합니다. 시안의 이자·특약 문구를 실제 금융 정책으로 확정하지 않았습니다.
+
+본인인증·QR 카메라·BLE·초대 발송·인증서 전자서명·은행 API·서버 PDF·S3·해시 검증·AI 호출·두 기기 간 실시간 동기화는 연동 전입니다. 증거 묶음은 현재 기록에서 채운 로컬 템플릿이며 외부 전송이나 법률 판단을 수행하지 않습니다. API 경로나 서버 응답을 임의로 추가하지 않았습니다.

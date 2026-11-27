@@ -1,44 +1,41 @@
-# 비밀 정보
-.env
-.env.*
-!.env.example
-*.pem
-*.key
+# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
 
-# OS, IDE
-.DS_Store
-Thumbs.db
-.idea/
-.vscode/
-*.iml
-
-# Java / Gradle
-build/
-.gradle/
-out/
-
-# Node
+# dependencies
 node_modules/
+
+# Expo
+.expo/
 dist/
-coverage/
+web-build/
+expo-env.d.ts
 
-# Python
-__pycache__/
-*.pyc
-.venv/
-venv/
-.pytest_cache/
+# Native
+.kotlin/
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
 
-# 금융 데이터 원본·개인정보는 커밋하지 않습니다 (Mock 샘플만 data/sample/ 에)
-data/raw/
-*.real.csv
+# Metro
+.metro-health-check*
 
-# 로컬 LLM·벡터DB 산출물
-ollama/
-*.faiss
-chroma_db/
+# debug
+npm-debug.*
+yarn-debug.*
+yarn-error.*
 
-# Terraform
-.terraform/
-*.tfstate
-*.tfstate.*
+# macOS
+.DS_Store
+*.pem
+
+# local env files
+.env*.local
+
+# typescript
+*.tsbuildinfo
+
+# generated native folders
+/ios
+/android

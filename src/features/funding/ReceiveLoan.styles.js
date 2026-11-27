@@ -1,0 +1,33 @@
+import { colors } from '../../ui/colors';
+import { StyleSheet } from 'react-native';
+
+export default StyleSheet.create({
+  box46: {"position": "absolute", "left": 0.0, "top": 0.0, "width": 390.0, "height": 844.0, "backgroundColor": colors.cream},
+  box47: {"position": "absolute", "left": 0.0, "top": 0.0, "width": 390.0, "height": 56.0, "backgroundColor": colors.surface},
+  text48: {"position": "absolute", "left": 20.0, "top": 16.0, "width": 56.0, "height": 26.1, "fontSize": 16.0, "fontFamily": "NotoSansKR_700Bold", "color": colors.ink, "lineHeight": 21.1, "includeFontPadding": false},
+  text49: {"position": "absolute", "left": 338.0, "top": 19.0, "width": 40.0, "height": 20.8, "fontSize": 12.0, "fontFamily": "NotoSansKR_400Regular", "color": colors.muted, "lineHeight": 15.8, "includeFontPadding": false},
+  text51: {"position": "absolute", "left": 119.0, "top": 84.0, "width": 161.57000000000002, "height": 22.2, "fontSize": 13.0, "fontFamily": "NotoSansKR_400Regular", "color": colors.muted, "lineHeight": 17.2, "includeFontPadding": false, "textAlign": "center"},
+  box53: {"position": "absolute", "left": 143.0, "top": 121.0, "width": 104.0, "height": 104.0, "backgroundColor": colors.soft, "borderRadius": 52.0},
+  box54: {"position": "absolute", "left": 163.0, "top": 141.0, "width": 64.0, "height": 64.0, "borderColor": colors.soft, "borderRadius": 32.0, "borderWidth": 1},
+  text55: {"position": "absolute", "left": 61.0, "top": 242.0, "width": 274.0, "height": 66.0, "fontSize": 21.0, "fontFamily": "NotoSansKR_700Bold", "color": colors.ink, "lineHeight": 31.5, "includeFontPadding": false, "textAlign": "center"},
+  text56: {"position": "absolute", "left": 108.0, "top": 310.0, "width": 182.97, "height": 22.2, "fontSize": 13.0, "fontFamily": "NotoSansKR_400Regular", "color": colors.muted, "lineHeight": 17.2, "includeFontPadding": false, "textAlign": "center"},
+  box57: {"position": "absolute", "left": 20.0, "top": 350.0, "width": 350.0, "height": 133.0, "backgroundColor": colors.surface, "borderRadius": 16.0},
+  text59: {"position": "absolute", "left": 38.0, "top": 366.0, "width": 50.0, "height": 23.5, "fontSize": 14.0, "fontFamily": "NotoSansKR_400Regular", "color": colors.muted, "lineHeight": 18.5, "includeFontPadding": false},
+  text60: {"position": "absolute", "left": 285.0, "top": 366.0, "width": 75.0, "height": 23.5, "fontSize": 14.0, "fontFamily": "NotoSansKR_700Bold", "color": colors.ink, "lineHeight": 18.5, "includeFontPadding": false},
+  text62: {"position": "absolute", "left": 38.0, "top": 394.0, "width": 76.0, "height": 23.5, "fontSize": 14.0, "fontFamily": "NotoSansKR_400Regular", "color": colors.muted, "lineHeight": 18.5, "includeFontPadding": false},
+  text63: {"position": "absolute", "left": 313.0, "top": 394.0, "width": 47.0, "height": 23.5, "fontSize": 14.0, "fontFamily": "NotoSansKR_400Regular", "color": colors.ink, "lineHeight": 18.5, "includeFontPadding": false},
+  text65: {"position": "absolute", "left": 38.0, "top": 422.0, "width": 63.0, "height": 23.5, "fontSize": 14.0, "fontFamily": "NotoSansKR_400Regular", "color": colors.muted, "lineHeight": 18.5, "includeFontPadding": false},
+  text66: {"position": "absolute", "left": 196.0, "top": 422.0, "width": 166.92000000000002, "height": 23.5, "fontSize": 14.0, "fontFamily": "NotoSansKR_400Regular", "color": colors.ink, "lineHeight": 18.5, "includeFontPadding": false},
+  text67: {"position": "absolute", "left": 38.0, "top": 450.0, "width": 189.39000000000001, "height": 20.8, "fontSize": 12.0, "fontFamily": "NotoSansKR_400Regular", "color": colors.muted, "lineHeight": 15.8, "includeFontPadding": false},
+  box68: {"position": "absolute", "left": 20.0, "top": 495.0, "width": 350.0, "height": 145.0, "backgroundColor": colors.surface, "borderRadius": 16.0},
+  text69: {"position": "absolute", "left": 38.0, "top": 511.0, "width": 222.56, "height": 20.8, "fontSize": 12.0, "fontFamily": "NotoSansKR_400Regular", "color": colors.muted, "lineHeight": 15.8, "includeFontPadding": false},
+  text70: {"position": "absolute", "left": 38.0, "top": 532.0, "width": 298.53000000000003, "height": 24.8, "fontSize": 15.0, "fontFamily": "NotoSansKR_700Bold", "color": colors.ink, "lineHeight": 19.8, "includeFontPadding": false},
+  box71: {"position": "absolute", "left": 38.0, "top": 564.0, "width": 314.0, "height": 60.0, "backgroundColor": "#fffaf6", "borderColor": "#f0a877", "borderRadius": 12.0, "borderWidth": 1},
+  box72: {"position": "absolute", "left": 51.0, "top": 582.0, "width": 24.0, "height": 24.0, "borderColor": "#f0a877", "borderRadius": 12.0, "borderWidth": 1},
+  text73: {"position": "absolute", "left": 59.0, "top": 585.0, "width": 16.0, "height": 20.8, "fontSize": 12.0, "fontFamily": "NotoSansKR_700Bold", "color": "#9a3412", "lineHeight": 15.8, "includeFontPadding": false},
+  text74: {"position": "absolute", "left": 85.0, "top": 575.0, "width": 201.0, "height": 37.0, "fontSize": 0.0, "fontFamily": "NotoSansKR_400Regular", "color": "#000000", "lineHeight": 0.0, "includeFontPadding": false},
+  text75: {"position": "absolute", "left": 301.0, "top": 577.0, "width": 42.0, "height": 33.0, "fontSize": 12.0, "fontFamily": "NotoSansKR_700Bold", "color": "#9a3412", "lineHeight": 15.8, "includeFontPadding": false},
+  box77: {"position": "absolute", "left": 20.0, "top": 767.0, "width": 350.0, "height": 53.0, "backgroundColor": colors.surface, "borderColor": colors.line, "borderRadius": 14.0, "borderWidth": 1},
+  text78: {"position": "absolute", "left": 145.0, "top": 783.0, "width": 108.0, "height": 24.8, "fontSize": 15.0, "fontFamily": "NotoSansKR_400Regular", "color": colors.ink, "lineHeight": 19.8, "includeFontPadding": false},
+  taptext78: {"position": "absolute", "left": 20.0, "top": 767.0, "width": 350.0, "height": 53.0},
+});

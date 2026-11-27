@@ -1,0 +1,26 @@
+{
+  "expo": {
+    "name": "바로바로",
+    "slug": "barobaro",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/brand/baroborrow.png",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#d4d5d5",
+        "foregroundImage": "./assets/brand/adaptive.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/brand/favicon.png"
+    },
+    "plugins": [
+      "expo-font"
+    ]
+  }
+}

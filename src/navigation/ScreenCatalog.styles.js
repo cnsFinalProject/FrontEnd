@@ -1,0 +1,3 @@
+import { colors } from '../ui/colors';
+import { StyleSheet } from 'react-native';
+export default StyleSheet.create({page:{width:'100%',maxWidth:480,padding:16,gap:12},heading:{fontFamily:'NotoSansKR_700Bold',fontSize:22,color:colors.ink},group:{backgroundColor:colors.surface,padding:14,borderRadius:14},title:{fontFamily:'NotoSansKR_700Bold',fontSize:16,marginBottom:8,color:colors.ink},row:{minHeight:44,flexDirection:'row',alignItems:'center',gap:10,borderTopWidth:1,borderColor:colors.soft},code:{fontSize:12,fontFamily:'NotoSansKR_700Bold',color:colors.action},label:{flexShrink:1,fontSize:14,color:colors.ink}});

@@ -1,0 +1,32 @@
+import { colors } from '../../ui/colors';
+import { StyleSheet } from 'react-native';
+
+export default StyleSheet.create({
+  art444: {"position": "absolute", "left": 0.0, "top": 0.0, "width": 390.0, "height": 844.0},
+  art446: {"position": "absolute", "left": 159.0, "top": 72.0, "width": 72.0, "height": 72.0},
+  art447: {"position": "absolute", "left": 177.0, "top": 90.0, "width": 36.0, "height": 36.0},
+  text449: {"position": "absolute", "left": 119.6, "top": 168.0, "width": 160.5, "height": 39.3, "fontSize": 26.0, "fontFamily": "NotoSansKR_700Bold", "color": colors.ink, "lineHeight": 34.3, "includeFontPadding": false},
+  text450: {"position": "absolute", "left": 94.7, "top": 212.9, "width": 212.93, "height": 24.8, "fontSize": 15.0, "fontFamily": "NotoSansKR_400Regular", "color": colors.muted, "lineHeight": 19.8, "includeFontPadding": false},
+  text451: {"position": "absolute", "left": 118.8, "top": 236.9, "width": 162.64000000000001, "height": 24.8, "fontSize": 15.0, "fontFamily": "NotoSansKR_400Regular", "color": colors.muted, "lineHeight": 19.8, "includeFontPadding": false},
+  art452: {"position": "absolute", "left": 19.97, "top": 289.27, "width": 349.967, "height": 279.667},
+  text453: {"position": "absolute", "left": 40.7, "top": 312.6, "width": 86.0, "height": 26.1, "fontSize": 16.0, "fontFamily": "NotoSansKR_700Bold", "color": colors.ink, "lineHeight": 21.1, "includeFontPadding": false},
+  text454: {"position": "absolute", "left": 254.5, "top": 316.6, "width": 102.0, "height": 20.8, "fontSize": 12.0, "fontFamily": "NotoSansKR_400Regular", "color": colors.muted, "lineHeight": 15.8, "includeFontPadding": false},
+  text455: {"position": "absolute", "left": 40.7, "top": 349.7, "width": 71.0, "height": 22.2, "fontSize": 13.0, "fontFamily": "NotoSansKR_400Regular", "color": colors.muted, "lineHeight": 17.2, "includeFontPadding": false},
+  text456: {"position": "absolute", "left": 136.7, "top": 349.7, "width": 44.0, "height": 22.2, "fontSize": 13.0, "fontFamily": "NotoSansKR_400Regular", "color": colors.ink, "lineHeight": 17.2, "includeFontPadding": false},
+  text457: {"position": "absolute", "left": 40.7, "top": 377.0, "width": 59.0, "height": 22.2, "fontSize": 13.0, "fontFamily": "NotoSansKR_400Regular", "color": colors.muted, "lineHeight": 17.2, "includeFontPadding": false},
+  text458: {"position": "absolute", "left": 136.7, "top": 377.0, "width": 44.0, "height": 22.2, "fontSize": 13.0, "fontFamily": "NotoSansKR_400Regular", "color": colors.ink, "lineHeight": 17.2, "includeFontPadding": false},
+  text459: {"position": "absolute", "left": 40.7, "top": 404.3, "width": 69.0, "height": 22.2, "fontSize": 13.0, "fontFamily": "NotoSansKR_400Regular", "color": colors.muted, "lineHeight": 17.2, "includeFontPadding": false},
+  text460: {"position": "absolute", "left": 136.7, "top": 404.3, "width": 100.0, "height": 22.2, "fontSize": 13.0, "fontFamily": "NotoSansKR_400Regular", "color": colors.ink, "lineHeight": 17.2, "includeFontPadding": false},
+  text461: {"position": "absolute", "left": 40.7, "top": 431.7, "width": 59.0, "height": 22.2, "fontSize": 13.0, "fontFamily": "NotoSansKR_400Regular", "color": colors.muted, "lineHeight": 17.2, "includeFontPadding": false},
+  text462: {"position": "absolute", "left": 136.7, "top": 431.7, "width": 122.0, "height": 22.2, "fontSize": 13.0, "fontFamily": "NotoSansKR_400Regular", "color": colors.ink, "lineHeight": 17.2, "includeFontPadding": false},
+  text463: {"position": "absolute", "left": 40.7, "top": 459.0, "width": 32.0, "height": 22.2, "fontSize": 13.0, "fontFamily": "NotoSansKR_400Regular", "color": colors.muted, "lineHeight": 17.2, "includeFontPadding": false},
+  text464: {"position": "absolute", "left": 136.7, "top": 459.0, "width": 153.01000000000002, "height": 22.2, "fontSize": 13.0, "fontFamily": "NotoSansKR_400Regular", "color": colors.ink, "lineHeight": 17.2, "includeFontPadding": false},
+  art465: {"position": "absolute", "left": 40.7, "top": 490.0, "width": 308.7, "height": 58.4},
+  text466: {"position": "absolute", "left": 52.7, "top": 502.6, "width": 296.39000000000004, "height": 20.8, "fontSize": 12.0, "fontFamily": "NotoSansKR_400Regular", "color": colors.muted, "lineHeight": 15.8, "includeFontPadding": false},
+  text467: {"position": "absolute", "left": 52.7, "top": 521.8, "width": 70.0, "height": 20.8, "fontSize": 12.0, "fontFamily": "NotoSansKR_400Regular", "color": colors.muted, "lineHeight": 15.8, "includeFontPadding": false},
+  art468: {"position": "absolute", "left": 20.0, "top": 708.0, "width": 350.0, "height": 56.0},
+  text469: {"position": "absolute", "left": 116.4, "top": 726.4, "width": 165.85000000000002, "height": 27.4, "fontSize": 17.0, "fontFamily": "NotoSansKR_700Bold", "color": colors.surface, "lineHeight": 22.4, "includeFontPadding": false},
+  taptext469: {"position": "absolute", "left": 20.0, "top": 708.0, "width": 350.0, "height": 56.0},
+  text470: {"position": "absolute", "left": 174.3, "top": 787.5, "width": 50.0, "height": 24.8, "fontSize": 15.0, "fontFamily": "NotoSansKR_400Regular", "color": colors.muted, "lineHeight": 19.8, "includeFontPadding": false},
+  taptext470: {"position": "absolute", "left": 169.3, "top": 781.5, "width": 54.0, "height": 34},
+});
