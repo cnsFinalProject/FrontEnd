@@ -1,0 +1,33 @@
+# yaml-language-server: $schema=https://coderabbit.ai/integrations/schema.v2.json
+language: ko-KR
+tone_instructions: "문제가 재현되는 역할과 계약 단계를 밝히고, 근거가 되는 요구사항과 수정 후 확인 방법을 한국어로 간결하게 제시한다."
+reviews:
+  profile: chill
+  request_changes_workflow: false
+  high_level_summary: true
+  poem: false
+  auto_review:
+    enabled: true
+    drafts: false
+    base_branches:
+      - "^develop$"
+      - "^main$"
+  path_instructions:
+    - path: "**/*.{js,jsx,ts,tsx}"
+      instructions: >-
+        변경 기능에 해당하는 항목만 검토한다. 계약별 역할과 지정 수신자 권한, 로그아웃 뒤 캐시 제거,
+        합의한 API와 목업 구분, 서명 버전 일치, 두 사람 재서명 전 원본 보존을 본다.
+        송금·상환·취소는 처리 중 중복과 결과 미확정 시 재조회, 실시간 이벤트 뒤 오래된 응답 처리,
+        외부 입금 중복·정정 이력을 중점 확인한다. 토큰·PIN·개인정보 노출을 지적한다.
+        관리자 기능은 서버 권한, 운영 메타데이터 범위, 통계 0·요청 없음·수집 실패의 화면 처리를 본다.
+    - path: "**/*.md"
+      instructions: >-
+        실행 명령이 해당 브랜치에 존재하는지, 요구사항 번호와 실제 기능이 맞는지,
+        제안 API·시연 수치·검증 결과가 확정 또는 실연동으로 잘못 쓰였는지 확인한다.
+knowledge_base:
+  code_guidelines:
+    enabled: true
+    filePatterns:
+      - "AGENTS.md"
+      - "docs/frontend.md"
+      - "docs/admin.md"

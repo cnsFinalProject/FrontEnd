@@ -12,14 +12,14 @@ body:
   - type: input
     id: req
     attributes:
-      label: 요구사항 ID / Tool 이름
-      placeholder: "FR-03 / analyze_cashflow"
+      label: 관련 RQ-ID 또는 공통 작업
+      placeholder: "RP-05 / 외부 입금 반영"
   - type: textarea
     id: goal
     attributes:
       label: 할 일
       description: 동사로 끝나게 적어 주세요
-      placeholder: "거래내역 CSV 업로드 API를 구현한다"
+      placeholder: "채권자가 가상 입금을 선택해 지정한 회차에 반영한다"
     validations:
       required: true
   - type: textarea
@@ -27,11 +27,11 @@ body:
     attributes:
       label: 완료 기준
       description: 무엇을 보면 끝났다고 할 수 있는지 적어 주세요
-      placeholder: "- CSV 업로드 시 거래 건수와 기간을 응답\n- 잘못된 형식이면 400과 오류 사유 응답\n- 테스트 코드 통과"
+      placeholder: "- 선택한 회차의 상환 내역·잔액 확인\n- 같은 입금을 다시 선택해도 추가 차감 없음\n- 정정 후 최초 기록과 정정 내역 함께 조회"
     validations:
       required: true
   - type: input
     id: due
     attributes:
       label: 마감일
-      placeholder: "11/20"
+      placeholder: "YYYY-MM-DD"

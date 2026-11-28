@@ -7,7 +7,7 @@ body:
     id: question
     attributes:
       label: 정할 것
-      placeholder: "LLM을 Ollama(로컬)로 갈지 외부 API로 갈지"
+      placeholder: "관리자 연체 카드를 기준 시각의 계약 수로 볼지, 기간 내 신규 연체 회차 수도 함께 표시할지"
     validations:
       required: true
   - type: textarea
@@ -22,4 +22,4 @@ body:
     id: result
     attributes:
       label: 결정 결과
-      description: 정해지면 채우고 docs/project-context.md 와 docs/decisions/ 에 반영합니다
+      description: 결정일·적용 범위·근거를 남기고 관련 요구사항, FE 가이드와 BE 계약에 반영합니다
